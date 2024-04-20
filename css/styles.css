@@ -1,0 +1,170 @@
+header {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+li > a {
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+img.restaurant-image {
+  width:100%;
+  height:200;
+}
+
+
+h1 {
+  text-align: center;
+  color: #4B5563;
+  margin-bottom: 20px;
+  padding: 10px 0; 
+}
+
+h4 {
+  color: #4B5563;
+
+}
+
+section > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo > div >  button {
+  background-color: darkgreen; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+section {
+  padding: 20px;
+  margin-top: 20px; 
+}
+
+.menu { 
+    overflow-x: hidden;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.menu::-webkit-scrollbar {
+  display: none;
+}
+
+hr {
+  height: 50x;
+  width: 100%;
+}
+
+.footer-last > img {
+  width:"230";
+  height:"200";
+}
+
+.about{
+width:20%;
+}
+
+.help {
+  width: 20%;
+}
+
+.about > a {
+  
+    text-decoration: none;
+    color:black;
+}
+
+.help > a {
+  
+  text-decoration: none;
+  color:black;
+}
+
+img {
+  width:"100";
+  height: "100"
+}
+
+
+/* Responsive styles */
+@media only screen and (min-width: 768px) {
+  /* For tablets and larger devices */
+  img[restaurant-image] {
+    width: 100%;
+    height: 500px;
+}
+section {
+    padding: 40px;
+}
+section > div {
+    margin-bottom: 10px;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+  /* For mobile devices */
+  img[restaurant-image] {
+      height: 350px;
+  }
+  section {
+      padding: 10px;
+  }
+  section > div {
+      margin-bottom: 10px;
+  }
+  footer {
+      padding: 10px;
+  }
+  footer > div {
+      flex-direction: column;
+  }
+}
+
+/* Footer styles */
+footer {
+  background-color: cadetblue;
+  padding: 20px;
+}
+
+footer > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+}
